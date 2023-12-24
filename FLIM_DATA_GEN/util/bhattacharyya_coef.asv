@@ -1,0 +1,6 @@
+function d = bhattacharyya_coef(X1, X2)
+X1=X1/max(X1);
+X2=X2/max(X1);
+BC=sum(sqrt(X1.*X2));
+d=-log(BC);
+end
